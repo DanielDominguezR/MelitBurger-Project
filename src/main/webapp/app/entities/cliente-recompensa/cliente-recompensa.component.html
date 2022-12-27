@@ -1,0 +1,40 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="melitBurguerApp.clienteRecompensa.home.title" class="pageEntitiesTitle">Cliente Recompensas</span>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="clienteRecompensas">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="fecha"><span jhiTranslate="melitBurguerApp.clienteRecompensa.fecha">Fecha</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="clienteId"><span jhiTranslate="melitBurguerApp.clienteRecompensa.cliente">Cliente</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="recompensaId"><span jhiTranslate="melitBurguerApp.clienteRecompensa.recompensa">Recompensa</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let clienteRecompensa of clienteRecompensas ;trackBy: trackId">
+                <td><a [routerLink]="['/cliente-recompensa', clienteRecompensa.id, 'view' ]">{{clienteRecompensa.id}}</a></td>
+                <td>{{clienteRecompensa.fecha | date:'mediumDate'}}</td>
+                <td>
+                    <div *ngIf="clienteRecompensa.clienteId">
+                        <a [routerLink]="['../cliente', clienteRecompensa.clienteId , 'view' ]" >{{clienteRecompensa.clienteId}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="clienteRecompensa.recompensaId">
+                        <a [routerLink]="['../recompensa', clienteRecompensa.recompensaId , 'view' ]" >{{clienteRecompensa.recompensaId}}</a>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="clienteRecompensas && clienteRecompensas.length">
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+        </div>
+    </div>
+</div>

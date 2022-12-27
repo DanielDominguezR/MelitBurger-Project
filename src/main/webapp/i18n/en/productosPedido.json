@@ -1,0 +1,23 @@
+{
+  "melitBurguerApp": {
+    "productosPedido": {
+      "home": {
+        "title": "Ordered Product",
+        "createLabel": "Create a new Ordered Product",
+        "createOrEditLabel": "Create or edit a Ordered Product"
+      },
+      "created": "A new Ordered Product is created with identifier {{ param }}",
+      "updated": "A Ordered Product is updated with identifier {{ param }}",
+      "deleted": "A Ordered Product is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ordered Product {{ id }}?"
+      },
+      "detail": {
+        "title": "Ordered Product"
+      },
+      "precioTotal": "Total Price",
+      "productos": "Products",
+      "pedido": "Order"
+    }
+  }
+}

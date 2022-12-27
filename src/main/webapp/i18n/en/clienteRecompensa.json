@@ -1,0 +1,23 @@
+{
+  "melitBurguerApp": {
+    "clienteRecompensa": {
+      "home": {
+        "title": "Customer Reward",
+        "createLabel": "Create a new Customer Reward",
+        "createOrEditLabel": "Create or edit a Customer Reward"
+      },
+      "created": "A new Customer Reward is created with identifier {{ param }}",
+      "updated": "A Customer Reward is updated with identifier {{ param }}",
+      "deleted": "A Customer Reward is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Customer Reward {{ id }}?"
+      },
+      "detail": {
+        "title": "Customer Reward"
+      },
+      "fecha": "Date",
+      "cliente": "Customer",
+      "recompensa": "Reward"
+    }
+  }
+}

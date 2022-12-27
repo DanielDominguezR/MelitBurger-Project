@@ -1,0 +1,444 @@
+@import 'bootstrap-variables';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* ==============================================================
+Bootstrap tweaks
+===============================================================*/
+
+.owo {
+  height: 480px;
+  background-image: url('../images/pupu.gif');
+  background-repeat: repeat-x;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  padding-right: 15px;
+  width: 100%;
+}
+
+select:focus {
+  border-color: rgba(255, 193, 7, 0.8) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 193, 0.8) !important;
+}
+
+textarea:focus,
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='time']:focus,
+input[type='week']:focus,
+input[type='number']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='color']:focus,
+.uneditable-input:focus {
+  border-color: rgba(255, 193, 7, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 193, 7, 0.8);
+  outline: 0 none;
+}
+
+.pageEntitiesTitle {
+  font-family: 'Lobster', cursive !important;
+}
+
+.btn-group {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+}
+
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-dialog {
+  max-width: 66%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+ngb-pagination {
+  margin-top: 16rem;
+}
+ngb-pagination ul > li.active > a {
+  margin: 0 5px 0 5px;
+  background-color: #000 !important;
+  //border-radius: 3px;
+  border-radius: 0.25rem;
+  border: none;
+  //box-shadow: 0px 12px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px #d3d3d3;
+}
+ngb-pagination ul > li.active > a:hover {
+  margin: 0 5px 0 5px;
+  background-color: $warning !important;
+  //border-radius: 3px;
+  border-radius: 0.25rem;
+  border: none;
+  color: #000 !important;
+  //box-shadow: 0px 12px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px #d3d3d3;
+}
+ngb-pagination ul > li.disabled > a {
+  margin: 0 2px 0 2px;
+  background-color: rgba(0, 0, 0, 0.074) !important;
+  //border-radius: 5px;
+  border-radius: 0.25rem;
+  //box-shadow: 0px 9px 10px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px #d3d3d3;
+}
+
+a {
+  //color: #957f03;
+  //color: #ffc107;
+  //color: #cc0707;
+  color: #495057;
+  font-weight: bold;
+  //text-transform: uppercase;
+}
+a:hover {
+  color: #2f2401;
+  //color:#4b0a0a;
+  font-weight: bold;
+  /* make sure browsers use the pointer cursor for anchors, even with no href */
+  cursor: pointer;
+  text-decoration: none;
+}
+footer {
+  background-color: #000 !important;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+a#footer-link {
+  color: $warning !important;
+  font-weight: normal;
+  text-decoration: none;
+  font-family: 'Lobster', cursive !important;
+}
+.dropdown-item {
+  color: #495057 !important;
+}
+.dropdown-item.active {
+  background-color: $warning !important;
+  color: #000 !important;
+}
+.dropdown-item:hover {
+  background-color: #6c757d !important;
+  // color: $dropdown-link-hover-color;
+  color: #fff !important;
+  font-weight: normal;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 0;
+}
+
+#addProductoModal .card-body {
+  padding: 0.86rem;
+}
+
+// // #addProductoCard{
+// //   border-radius: 1rem;
+// //   background: #e0e0e0;
+// //   box-shadow:  5px 5px 8px #d3d3d3,
+// //               -5px -5px 8px #ededed;
+// // }
+#addProductoCard .btn {
+  border-radius: 1rem;
+  box-shadow: 5px 5px 8px #d3d3d3;
+  //-5px -5px 8px #ededed;
+}
+
+.btn {
+  border-radius: 1rem;
+  box-shadow: 1px 1px 4px #d3d3d3;
+  //-1px -1px 4px #ededed;
+}
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+Generic styles
+========================================================================== */
+
+/* Error highlight on input fields */
+.ng-valid[required],
+.ng-valid.required {
+  border-left: 5px solid green;
+}
+
+.ng-invalid:not(form) {
+  border-left: 5px solid red;
+}
+
+/* other generic styles */
+
+.jh-card {
+  padding: 1.5%;
+  margin-top: 20px;
+  border: none;
+}
+
+.error {
+  color: white;
+  background-color: red;
+}
+
+.pad {
+  padding: 10px;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.break {
+  white-space: normal;
+  word-break: break-all;
+}
+
+.readonly {
+  background-color: #eee;
+  opacity: 1;
+}
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgb(32, 31, 31);
+}
+
+.hand,
+[jhisortby] {
+  cursor: pointer;
+}
+
+// select#field_tipo > option:hover{
+//   background-color:black;
+// }
+
+/* ==========================================================================
+Custom alerts for notification
+========================================================================== */
+.alerts {
+  .alert {
+    text-overflow: ellipsis;
+    pre {
+      background: none;
+      border: none;
+      font: inherit;
+      color: inherit;
+      padding: 0;
+      margin: 0;
+    }
+    .popover pre {
+      font-size: 10px;
+    }
+  }
+  .toast {
+    position: fixed;
+    width: 100%;
+    &.left {
+      left: 5px;
+    }
+    &.right {
+      right: 5px;
+    }
+    &.top {
+      top: 55px;
+    }
+    &.bottom {
+      bottom: 55px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .alerts .toast {
+    width: 50%;
+  }
+}
+
+/* ==========================================================================
+entity detail page css
+========================================================================== */
+.row.jh-entity-details > {
+  dd {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .row.jh-entity-details > {
+    dt {
+      margin-bottom: 15px;
+    }
+    dd {
+      border-bottom: 1px solid #eee;
+      padding-left: 180px;
+      margin-left: 0;
+    }
+  }
+}
+
+/* ==========================================================================
+ui bootstrap tweaks
+========================================================================== */
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+  cursor: pointer;
+}
+
+.thread-dump-modal-lock {
+  max-width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* jhipster-needle-scss-add-main JHipster will add new css style */
+
+//styles for the main text
+
+$color1: #ffc107;
+$color2: #640e13;
+$color3: #640e13;
+$color4: #fcb043;
+$cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+//initial text-shadow function
+@function textShadow($color) {
+  //value variable: x-value, y-value, color value;
+  $val: 0px 0px $color;
+  //loop to create text-shadow variables moving 1px to the left and 1 down
+  @for $i from 1 through 50 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color};
+  }
+  //return value
+  @return $val;
+}
+
+@function textAnimationShadow($color1, $color2, $color3, $color4, $color5) {
+  $val1: 0px 0px $color1;
+  $val2: 0px 0px $color2;
+  $val3: 0px 0px $color3;
+  $val4: 0px 0px $color4;
+  $val5: 0px 0px $color5;
+  @for $i from 1 through 10 {
+    $val1: #{$val1}, -#{$i}px #{$i}px #{$color1};
+  }
+  @for $i from 11 through 20 {
+    $val2: #{$val2}, -#{$i}px #{$i}px #{$color2};
+  }
+  @for $i from 21 through 30 {
+    $val3: #{$val3}, -#{$i}px #{$i}px #{$color3};
+  }
+  @for $i from 31 through 40 {
+    $val4: #{$val4}, -#{$i}px #{$i}px #{$color4};
+  }
+  @for $i from 41 through 50 {
+    $val5: #{$val5}, -#{$i}px #{$i}px #{$color5};
+  }
+  @return $val1, $val2, $val3, $val4, $val5;
+}
+
+//mixin to create initial text-shadow
+@mixin shadow($shadow-color) {
+  text-shadow: textShadow($shadow-color);
+}
+//mixin to create animation shadow, can enter 5 color variables
+@mixin animationShadow($shadow-color1, $shadow-color2, $shadow-color3, $shadow-color4, $shadow-color5) {
+  text-shadow: textAnimationShadow($shadow-color1, $shadow-color2, $shadow-color3, $shadow-color4, $shadow-color5);
+}
+
+h1#main-change-text {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-weight: normal;
+  font-size: 6rem;
+  color: $color2;
+  @include shadow($color1);
+  animation: color 4s ease-in infinite;
+}
+
+@keyframes color {
+  0%,
+  10% {
+    color: $color1;
+    @include shadow($color3);
+  }
+  11%,
+  20% {
+    color: $color1;
+    @include animationShadow($color3, $color3, $color3, $color3, $color1);
+  }
+  21%,
+  30% {
+    color: $color1;
+    @include animationShadow($color3, $color3, $color3, $color1, $color1);
+  }
+  31%,
+  40% {
+    color: $color1;
+    @include animationShadow($color3, $color3, $color1, $color1, $color1);
+  }
+  41%,
+  50% {
+    color: $color1;
+    @include animationShadow($color3, $color1, $color1, $color1, $color1);
+  }
+  51%,
+  60% {
+    color: $color2;
+    @include animationShadow($color1, $color1, $color1, $color1, $color1);
+  }
+  61%,
+  100% {
+    color: $color2;
+    @include animationShadow($color1, $color1, $color1, $color1, $color1);
+  }
+}
+
+//navbar
+.bg-dark {
+  background-color: #000 !important;
+}

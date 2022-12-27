@@ -1,0 +1,4 @@
+id;nombre;descripcion;puntos
+1;Descuento Basico;Descuento del 5% en tu recibo;100
+2;Descuento Gold;Descuento del 10% en tu recibo;200
+3;Descuento Diamond;Descuento del 20% en tu recibo;500

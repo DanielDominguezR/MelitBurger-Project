@@ -1,0 +1,4 @@
+id;nombre;descripcion
+1;Pendiente;Se acaba de crear el pedido y está pendiente de entregar
+2;Entregado;Se ha entregado el pedido
+3;Finalizado;Se ha pagado el pedido

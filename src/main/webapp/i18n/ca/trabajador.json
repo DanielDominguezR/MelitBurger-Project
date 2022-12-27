@@ -1,0 +1,26 @@
+{
+  "melitBurguerApp": {
+    "trabajador": {
+      "home": {
+        "title": "Treballadors",
+        "createLabel": "Crear nou Producte",
+        "createOrEditLabel": "Crear o Editar nou producte"
+      },
+      "created": "Un nou Producte ha estat creat amb l'identificador {{ param }}",
+      "updated": "S'actualitza un producte amb un identificador {{ param }}",
+      "deleted": "En Producte se suprimirà amb identificador {{ param }}",
+      "delete": {
+        "question": "Esteu segur que voleu suprimir Producto {{ id }}?"
+      },
+      "detail": {
+        "title": "Treballadors"
+      },
+      "nombre": "Nombre",
+      "apellido": "Cognom",
+      "dni": "Dni",
+      "telefono": "Telèfon",
+      "correo": "Correo",
+      "pedido": "Comanda"
+    }
+  }
+}
